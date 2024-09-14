@@ -1,0 +1,116 @@
+/* Main Layout */
+.page-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Left Side (Card Grid) */
+.home-container {
+  width: 70%; /* 70% width for the card section */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  max-height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-buttons .btn {
+  background-color: #ff267e;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  flex-grow: 1;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-buttons .btn:hover {
+  background-color: #e51c63;
+  transform: scale(1.05);
+}
+
+/* Right Side (Internship Section) */
+.internship-section {
+  width: 20%; /* 25% width for the internship section */
+  background-color: #03010e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.internship-section h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.internship-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.internship-list li {
+  margin-bottom: 1rem;
+  padding: 5px;
+  background-color: rgb(21, 2, 2);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.internship-list li:hover {
+  transform: translateY(-5px);
+}
+
+.internship-list li .internship-title {
+  font-weight: bold;
+}
+
+.internship-list li .apply-btn {
+  background-color: #ff267e;
+  color: rgb(156, 247, 20);
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.internship-list li .apply-btn:hover {
+  background-color: #e51c63;
+}
